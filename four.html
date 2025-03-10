@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* General styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    /* Navigation Styles */
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00bcd4;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to right, #00bcd4, #00796b);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 4em;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    /* About Section */
+    .about {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 1.1em;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Skills Section */
+    .skills {
+      background-color: #00796b;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .skills h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .skills ul li {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #00bcd4;
+      border-radius: 5px;
+      font-size: 1.2em;
+    }
+
+    /* Projects Section */
+    .projects {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .projects h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .projects .project-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .projects .project-item {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin: 10px;
+      width: 280px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .projects .project-item h3 {
+      font-size: 1.8em;
+      color: #00796b;
+    }
+
+    .projects .project-item p {
+      font-size: 1em;
+      color: #333;
+    }
+
+    .projects .project-item a {
+      text-decoration: none;
+      color: #00bcd4;
+      font-size: 1.1em;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #00bcd4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5em;
+      }
+
+      .about p {
+        font-size: 1em;
+      }
+
+      .skills ul {
+        flex-direction: column;
+      }
+
+      .projects .project-list {
+        flex-direction: column;
+      }
+
+      .projects .project-item {
+        width: 90%;
+        margin: 10px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Welcome to My Portfolio</h1>
+    <p>I’m a passionate Web Developer creating amazing websites and applications.</p>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>I'm a self-taught web developer with a strong passion for learning new technologies and solving real-world problems through code. I specialize in front-end development, but I am also expanding my skills in back-end development.</p>
+    <p>I hold a degree in Computer Science and have worked on various web development projects, from small websites to large-scale applications. My goal is to always create user-friendly and efficient websites that provide a great experience for users.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project-item">
+        <h3>Project One</h3>
+        <p>A web application built using React that allows users to track their tasks and set deadlines.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+      <div class="project-item">
+        <h3>Project Two</h3>
+        <p>A full-stack website that helps users manage their personal finances, built with Node.js and MongoDB.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+      <div class="project-item">
+        <h3>Project Three</h3>
+        <p>A responsive portfolio website with smooth animations and interactive UI built with HTML, CSS, and JavaScript.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 My Portfolio. All rights reserved. | <a href="#contact">Contact</a></p>
+  </footer>
+
+</body>
+</html>
